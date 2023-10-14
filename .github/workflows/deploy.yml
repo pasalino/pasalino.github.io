@@ -8,7 +8,7 @@ env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Config
@@ -21,4 +21,4 @@ jobs:
         run: |
           npm install
       - name: Deploy
-        run: npm run deploy
+        run: npm run deploy:ci
