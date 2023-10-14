@@ -14,8 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build && gh-pages -d public -b main",
-    "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/pasalino/pasalino.github.io.git"
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
