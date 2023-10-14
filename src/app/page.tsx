@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-3xl">Pasalino.it</h1>
       <p>
-        <span>I'm Pasqualino de Simone a.k.a. Pasalino</span>
+        <span>I&apos;m Pasqualino de Simone a.k.a. Pasalino</span>
         <br />
         <span>Welcome!</span>
         <br />
