@@ -1,3 +1,4 @@
+import { GTag } from "@/components/gtag";
 import "./styles/globals.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
@@ -17,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head></head>
       <body className={inter.className}>
+        <GTag />
         <div className="relative z-10 h-fit flex justify-center md:h-screen">
           <div className="flex w-10/12 my-6 lg:w-8/12 xl:w-7/12 2xl:w-5/12">
             {children}
