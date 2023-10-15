@@ -1,8 +1,8 @@
 import "./styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Pasqualino de Simone - Pasalino.it",
@@ -13,14 +13,23 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode[];
 }) {
   return (
     <html lang="en">
       <head>
         <link rel="icon" href="/images/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="relative z-10 h-fit flex justify-center md:h-screen">
+          <div className="flex w-10/12 my-6 lg:w-8/12 xl:w-7/12 2xl:w-5/12">
+            {children}
+          </div>
+        </div>
+        <div className="fixed top-0 h-full w-full flex">
+          <div className="bg-light-blue w-9/12 sm:w-7/12 md:w-4/12"></div>
+        </div>
+      </body>
     </html>
   );
 }

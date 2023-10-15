@@ -1,16 +1,11 @@
-import Image from "next/image";
+import { Badge } from "../components/badge";
+import { Description } from "../components/description";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl">Pasalino.it</h1>
-      <p>
-        <span>I&apos;m Pasqualino de Simone a.k.a. Pasalino</span>
-        <br />
-        <span>Welcome!</span>
-        <br />
-        <span>Coming soon - Stay tuned!</span>
-      </p>
+    <main className="flex flex-col items-center md:flex-row">
+      <Badge />
+      <Description />
     </main>
   );
 }
