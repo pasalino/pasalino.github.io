@@ -18,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link rel="icon" href="/images/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <GTag />
         <div className="relative z-10 h-fit flex justify-center md:h-screen">
