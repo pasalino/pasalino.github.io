@@ -3,7 +3,7 @@ import { SocialBar } from "./social-bar";
 
 export const Badge = () => (
   <div className="flex flex-col justify-center max-w-[350px] bg-white rounded-xl shadow-xl md:min-w-[350px]">
-    <div className="p-10 flex justify-center items-center flex-col">
+    <div className="p-10 flex justify-center items-center flex-col text-center">
       <Image
         src="/images/pasalino.jpg"
         className="rounded-full mb-5"

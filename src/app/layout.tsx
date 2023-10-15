@@ -24,12 +24,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <GTag />
         <div className="relative z-10 h-fit flex justify-center md:h-screen">
-          <div className="flex w-10/12 my-6 lg:w-8/12 xl:w-7/12 2xl:w-5/12">
+          <div className="flex w-10/12 my-6 lg:w-8/12 xl:w-7/12 2xl:w-5/12 justify-center">
             {children}
           </div>
         </div>
         <div className="fixed top-0 h-full w-full flex">
-          <div className="bg-light-blue w-9/12 sm:w-7/12 md:w-4/12"></div>
+          <div className="bg-light-blue w-10/12 sm:w-7/12 md:w-4/12"></div>
         </div>
       </body>
     </html>
