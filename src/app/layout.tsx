@@ -8,7 +8,7 @@ const inter = Roboto({ subsets: ["latin"], weight: "400" });
 export const metadata: Metadata = {
   title: "Pasqualino de Simone - Pasalino.it",
   description:
-    "Pasqualino de Simone personal web sites. Software engineer, People and Technology lover, 3D printer addicted, Maker",
+    "Pasqualino de Simone personal web site. Software engineer, People and Technology lover, 3D printer addicted, Maker",
 };
 
 export default function RootLayout({
