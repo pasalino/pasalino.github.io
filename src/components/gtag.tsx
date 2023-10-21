@@ -9,7 +9,7 @@ export const GTag = () => (
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'GA_MEASUREMENT_ID');
+          gtag('config', 'GTM-PBF2CJPF');
         `}
     </Script>
   </>
